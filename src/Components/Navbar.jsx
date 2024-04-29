@@ -14,13 +14,13 @@ const Navbar = (props) => {
                     <FontAwesomeIcon icon="fa-solid fa-bars" size="xl" />
                 </button>
                 <div className="flex gap-3">
-                    <button className="">
+                    {/* <button className="">
                         <FontAwesomeIcon
                             icon="fa-solid fa-bell"
                             size="xl"
                             beat
                         />
-                    </button>
+                    </button> */}
                     <button className="">
                         <FontAwesomeIcon
                             icon="fa-regular fa-circle-user"
@@ -30,11 +30,6 @@ const Navbar = (props) => {
                 </div>
             </div>
             {/* Dropdown */}
-            <div className="absolute right-10 top-16 duration-300">
-                <ul>
-                    <li className="p-2 bg-slate-200">logout</li>
-                </ul>
-            </div>
         </div>
     )
 }

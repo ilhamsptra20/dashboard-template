@@ -1,125 +1,157 @@
-import Accordion from "../pages/Accordion"
-import Alerts from "../pages/Alerts"
-import Avatars from "../pages/Avatars"
-import Badges from "../pages/Badges"
-import Breadcrumbs from "../pages/Breadcrumbs"
-import Buttons from "../pages/Buttons"
-import Cards from "../pages/Cards"
+import Attendance from "../pages/Attendance"
+import Career from "../pages/Career"
 import Dashboard from "../pages/Dashboard"
-import Dropdown from "../pages/Dropdown"
-import Forms from "../pages/Forms"
-import Modal from "../pages/Modal"
-import Paginations from "../pages/Paginations"
-import Tabs from "../pages/Tabs"
-import Toast from "../pages/Toast"
-// import Toggle from "../pages/Toggle"
+import Employe from "../pages/Employe"
+import EmployeeAttendanceLocation from "../pages/EmployeeAttendanceLocation"
+import MassLeave from "../pages/MassLeave"
+import Organization from "../pages/Organization"
+import Payroll from "../pages/Payroll"
+import Setting from "../pages/Setting"
+import AttendanceEditForms from "../pages/forms/AttendanceEditForms"
+import AttendanceLocationForms from "../pages/forms/AttendanceLocationForms"
+import EmployeeAttendanceLocationForms from "../pages/forms/EmployeeAttendanceLocationForms"
+import EmployeeShiftGroupForms from "../pages/forms/EmployeeShiftGroupForms"
+import EmployeeShiftUploadForms from "../pages/forms/EmployeeShiftUploadForms"
+import LeaveBalanceMaintananceForms from "../pages/forms/LeaveBalanceMaintananceForms"
+import LeaveTypeForms from "../pages/forms/LeaveTypeForms"
+import MassLeaveForms from "../pages/forms/MassLeaveForms"
+import ShiftDaily from "../pages/forms/ShiftDaily"
+import ShiftGroup from "../pages/forms/ShiftGroup"
 
 const routes = [
     {
-        path: "dashboard",
+        path: "/",
         component: Dashboard,
         title: "Dashboard",
         icon: "fa-solid fa-gauge-high",
         type: "sidebar",
     },
     {
-        path: "alerts",
-        component: Alerts,
-        title: "alerts",
-        icon: "fa-solid fa-gauge-high",
+        path: "/organization",
+        component: Organization,
+        title: "Organization",
+        icon: "fa-solid fa-sitemap",
         type: "sidebar",
     },
     {
-        path: "avatars",
-        component: Avatars,
-        title: "avatars",
-        icon: "fa-solid fa-gauge-high",
+        path: "/employe",
+        component: Employe,
+        title: "Employe",
+        icon: "fa-solid fa-user-tie",
         type: "sidebar",
     },
     {
-        path: "badges",
-        component: Badges,
-        title: "badges",
-        icon: "fa-solid fa-gauge-high",
+        path: "/career",
+        component: Career,
+        title: "Career",
+        icon: "fa-solid fa-user-tie",
         type: "sidebar",
     },
     {
-        path: "breadcrumbs",
-        component: Breadcrumbs,
-        title: "breadcrumbs",
-        icon: "fa-solid fa-gauge-high",
+        path: "/attendance",
+        component: Attendance,
+        title: "Attendance",
+        icon: "fa-solid fa-clock",
         type: "sidebar",
     },
     {
-        path: "buttons",
-        component: Buttons,
-        title: "buttons",
-        icon: "fa-solid fa-gauge-high",
+        path: "/payroll",
+        component: Payroll,
+        title: "Payroll",
+        icon: "fa-solid fa-newspaper",
         type: "sidebar",
     },
     {
-        path: "cards",
-        component: Cards,
-        title: "cards",
-        icon: "fa-solid fa-gauge-high",
+        path: "/setting",
+        component: Setting,
+        title: "Setting",
+        icon: "fa-solid fa-gear",
         type: "sidebar",
     },
     {
-        path: "forms",
-        component: Forms,
-        title: "forms",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/shiftdaily",
+        component: ShiftDaily,
+        title: "ShiftDaily",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "paginations",
-        component: Paginations,
-        title: "paginations",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/shiftgroup",
+        component: ShiftGroup,
+        title: "ShiftGroup",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "accordion",
-        component: Accordion,
-        title: "accordion",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/leavetypeforms",
+        component: LeaveTypeForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "dropdown",
-        component: Dropdown,
-        title: "dropdown",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/AttendanceLocationForms",
+        component: AttendanceLocationForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "modal",
-        component: Modal,
-        title: "modal",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/EmployeeShiftUploadForms",
+        component: EmployeeShiftUploadForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "toast",
-        component: Toast,
-        title: "toast",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/EmployeeShiftGroupForms",
+        component: EmployeeShiftGroupForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
     {
-        path: "tabs",
-        component: Tabs,
-        title: "tabs",
-        icon: "fa-solid fa-gauge-high",
-        type: "sidebar",
+        path: "/AttendanceEditForms",
+        component: AttendanceEditForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
     },
-    // {
-    //     path: "toggle",
-    //     component: Toggle,
-    //     title: "toggle",
-    //     icon: "fa-solid fa-gauge-high",
-    //     type: "sidebar",
-    // },
+    {
+        path: "/MassLeave",
+        component: MassLeave,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
+    },
+    {
+        path: "/MassLeaveForms",
+        component: MassLeaveForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
+    },
+    {
+        path: "/LeaveBalanceMaintananceForms",
+        component: LeaveBalanceMaintananceForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
+    },
+    {
+        path: "/EmployeeAttendanceLocation",
+        component: EmployeeAttendanceLocation,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
+    },
+    {
+        path: "/EmployeeAttendanceLocationForms",
+        component: EmployeeAttendanceLocationForms,
+        title: "leavetype forms",
+        icon: "fa-solid fa-gear",
+        // type: "sidebar",
+    },
 ]
 
 export default routes
